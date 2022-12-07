@@ -38,7 +38,6 @@ public class JwtUtil {
         }catch (Exception e){
             return null;
         }
-
     }
     private Date generateExpirationDate() {
         return new Date(System.currentTimeMillis()+tokenValidUntil*1000);
